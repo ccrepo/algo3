@@ -1,0 +1,12 @@
+#!/bin/sh 
+
+./c
+
+\export PATH="$JAVA_HOME/bin":"$PATH"
+\export JAVA_BIN="$JAVA_HOME/bin/java"
+
+\cd ../algo/build/libs
+
+"$JAVA_BIN" -Dfile.encoding=UTF-8 -cp algo.jar cc.algo.Runner 
+
+#1>/dev/null 2>/dev/null
