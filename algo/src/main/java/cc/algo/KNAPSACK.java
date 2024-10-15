@@ -111,7 +111,7 @@ public class KNAPSACK {
 
       _memory.put("" + i + "-" + k, lhs);
 
-      _memory.put("" + (k+1) + "-" + k, rhs);
+      _memory.put("" + (k+1) + "-" + j, rhs);
 
       if (lhs[1] <= _M && rhs[1] <= _M) {
 
